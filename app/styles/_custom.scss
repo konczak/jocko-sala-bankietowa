@@ -52,6 +52,8 @@ $colors: (
 $my-secondary: #C36BA1;
 $my-light: #DF958F;
 $my-dark: #C36BA1;
+$my-light-shade: #F6F4F5;
+$my-dark-shade: #63437D;
 
 $theme-colors: (
   primary: $pink,
@@ -60,6 +62,8 @@ $theme-colors: (
   info: $cyan,
   warning: $yellow,
   danger: $red,
+  light-shade: $my-light-shade,
   light: $my-light,
-  dark: $my-dark
+  dark: $my-dark,
+  dark-shade: $my-dark-shade
 ) !default;
