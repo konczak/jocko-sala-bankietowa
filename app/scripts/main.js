@@ -52,5 +52,7 @@
   $('#start-exploring').hover(startPulseOnHoverIn, stopPulseOnHoverOut);
   $(document).on('click', 'a[href^="#"]', scrollSmoothly);
 
+  $('.carousel').carousel();
+
   new WOW().init();
 })();
