@@ -36,3 +36,9 @@ Remove container
 Remove image
 
     docker rmi kpcv
+
+#TODOs
+
+on mobile when display contact phone number make it possible to call it
+
+navbar - background color set to dark-shade

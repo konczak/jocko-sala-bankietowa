@@ -10,25 +10,6 @@
     }
   }
 
-  function startPulseOnHoverIn() {
-    $(this).addClass('animated pulse infinite');
-  };
-
-  function stopPulseOnHoverOut() {
-    $(this).removeClass('animated pulse infinite');
-  };
-
-  function showOtherSkills(event) {
-    event.preventDefault();
-
-    var $this = $(this);
-
-    const idOfOtherSkillsToShow = $this.attr('data-skills-other');
-    document.getElementById(idOfOtherSkillsToShow)
-      .classList.remove('d-none');
-    $this.classList.add('disabled');
-  };
-
   function addEntranceAnimation() {
     var $this = $(this);
 
@@ -46,13 +27,13 @@
     }, 500);
   };
 
-  $(document).on('click', 'a[data-skills-other]', showOtherSkills);
   $(window).scroll(resizeNavbarAnimation);
   $('section').each(addEntranceAnimation);
-  $('#start-exploring').hover(startPulseOnHoverIn, stopPulseOnHoverOut);
   $(document).on('click', 'a[href^="#"]', scrollSmoothly);
 
-  $('.carousel').carousel();
+  $('.carousel').carousel({
+    interval: 5000
+  });
 
   new WOW().init();
 })();
