@@ -35,5 +35,29 @@
     interval: 5000
   });
 
+  $('#contact-person-marta-popover-activator')
+    .popover({
+      html: true,
+      placement: 'top',
+      content: $('#contact-person-marta-template').html(),
+      toggle: 'popover'
+    });
+
+  $('#contact-person-zdzislaw-popover-activator')
+    .popover({
+      html: true,
+      placement: 'top',
+      content: $('#contact-person-zdzislaw-template').html(),
+      toggle: 'popover'
+    });
+
+  $('#contact-person-daniela-popover-activator')
+    .popover({
+      html: true,
+      placement: 'top',
+      content: $('#contact-person-daniela-template').html(),
+      toggle: 'popover'
+    });
+
   new WOW().init();
 })();
