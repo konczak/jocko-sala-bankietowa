@@ -19,11 +19,11 @@ Dark shades       272C48 (1C2331)
 
 Build image
 
-    docker build -t kpcv .
+    docker build -t website-sala-bankietowa .
 
 Run container
 
-    docker run -d -p 80:80 --name kpcv kpcv
+    docker run -d -p 80:80 --name website-sala-bankietowa website-sala-bankietowa
 
 Open in browser
 
@@ -31,11 +31,11 @@ Open in browser
 
 Remove container
 
-    docker rm -f kpcv
+    docker rm -f website-sala-bankietowa
     
 Remove image
 
-    docker rmi kpcv
+    docker rmi website-sala-bankietowa
 
 #TODOs
 
